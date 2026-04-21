@@ -1,0 +1,185 @@
+/* scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+html.dark,
+html.dark * {
+  scrollbar-width: thin;
+  scrollbar-color: #41424A #1E1F23 !important;
+}
+
+/* footer */
+.dark #footer {
+  border-color: transparent !important;
+}
+
+/* search bar on the sidebar */
+.dark #search-bar-entry {
+  background-color: #2A2B31 !important;
+}
+
+/* eyebrow (above title) */
+.eyebrow {
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.dark .eyebrow {
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+/* sidebar and mobile nav background */
+.dark #sidebar,
+.dark #sidebar > ul,
+.dark #mobile-nav,
+.dark #navbar-transition {
+  background-color: #1E1F23 !important;
+}
+
+/* dark mode toggle knob (it hides after strict true on docs.json) */
+.dark .dark\:bg-gray-900:is(.dark *) {
+  background-color: #1E1F23 !important;
+}
+
+/* sidebar item hover */
+.dark .hover\:dark\:bg-gray-800:is(.dark *):hover {
+  background-color: #3A3B41 !important;
+}
+
+/* dropdown container and item icon border */
+.dark body [role="menu"],
+.dark [role="menuitem"] > div:first-child {
+  border-color: transparent !important;
+}
+
+/* dropdown menu and items */
+.dark body [role="menu"][class*="bg-background"],
+.dark body [role="menu"] [role="menuitem"] {
+  background-color: #2A2B31 !important;
+}
+
+.dark body [role="menuitem"]:hover {
+  background-color: #3A3B41 !important;
+}
+
+/* accordion background */
+.dark [data-component-part="accordion-button"] {
+  background-color: #2A2B31 !important;
+}
+
+/* card background */
+.dark body .card[class*="bg-background"] {
+  background-color: #2A2B31 !important;
+}
+
+/* next/prev page button background */
+.dark #pagination [class*="bg-background"] {
+  background-color: #2A2B31 !important;
+}
+
+/* copy page + more actions buttons */
+.dark #page-context-menu-button,
+.dark [aria-label="More actions"][class*="bg-background"] {
+  background-color: #3A3B41 !important;
+  border-color: transparent !important;
+}
+
+/* page background */
+.dark [class*="bg-background"]:not([class*="[&"]) {
+  background-color: #41424A !important;
+}
+
+/* search backdrop */
+.dark .backdrop-blur-sm[class*="bg-background"] {
+  background-color: transparent !important;
+}
+
+/* mobile nav overlay */
+.dark [aria-hidden="true"][class*="bg-background"] {
+  background-color: transparent !important;
+}
+
+/* hide ai bs */
+.chat-assistant-floating-input,
+#assistant-entry,
+#assistant-entry-mobile {
+  display: none !important;
+}
+
+/* navbar logo size */
+.nav-logo {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+/* --- */
+
+/* hide top search and assistant entry when the homepage assistant entry is visible */
+#search-bar-entry, #assistant-entry {
+  transition: opacity 0.15s ease-out;
+  body:has(#custom-homepage-assistant-entry) & {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* custom styling for suggested articles section on homepage */
+.columns.suggested-articles {
+  gap: 1.5rem 2rem;
+  .card {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    [data-component-part="card-content-container"] {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+      [data-component-part="card-icon"] {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2;
+        border-radius: 1rem;
+        transition: background-color 0.15s ease-out;
+        background-color: rgb(var(--gray-900));
+        .group:hover & {
+          background-color: rgb(var(--gray-800));
+        }
+        svg {
+          scale: 1.5;
+          background-color: rgb(var(--gray-100));
+        }
+        .dark & {
+          background-color: rgb(var(--gray-200));
+          .group:hover & {
+            background-color: rgb(var(--gray-50));
+          }
+          svg {
+            background-color: rgb(var(--gray-900));
+          }
+        }
+      }
+      [data-component-part="card-icon"] + div {
+        display: contents;
+      }
+      [data-component-part="card-title"],
+      [data-component-part="card-content"],
+      [data-component-part="card-cta"] {
+        margin: 0;
+      }
+      [data-component-part="card-content"] {
+        text-wrap: pretty;
+      }
+      [data-component-part="card-cta"] {
+        button {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}

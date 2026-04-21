@@ -1,0 +1,88 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "AutoReacter",
+  "colors": {
+    "primary": "#FFDB5E",
+    "light": "#FFDB5E",
+    "dark": "#FFDB5E"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          { "group": "Overview", "pages": ["commands/getting-started", "commands/invite"]},
+          { "group": "Auto-reactions", "pages": [
+            "commands/auto-reactions/auto-reaction",
+            "commands/auto-reactions/types",
+            "commands/auto-reactions/add",
+            "commands/auto-reactions/modification-options",
+            "commands/auto-reactions/modifications",
+            "commands/auto-reactions/list",
+            "commands/auto-reactions/remove",
+            "commands/auto-reactions/reorder"
+          ]},
+          { "group": "Whitelist", "pages": [
+            "commands/whitelist/whitelist",
+            "commands/whitelist/role",
+            "commands/whitelist/member",
+            "commands/whitelist/word"
+          ]},
+          { "group": "Blacklist", "pages": [
+            "commands/blacklist/blacklist",
+            "commands/blacklist/role",
+            "commands/blacklist/member",
+            "commands/blacklist/word"
+          ]},
+          { "group": "Manager", "pages": [
+            "commands/manager/manager",
+            "commands/manager/role",
+            "commands/manager/member",
+            "commands/manager/list"
+          ]},
+          { "group": "Miscellaneous", "pages":[
+            "commands/miscellaneous/utilities",
+            "commands/miscellaneous/clone", 
+            "commands/miscellaneous/emote", 
+            "commands/miscellaneous/ping",
+            "commands/miscellaneous/help",
+            "commands/miscellaneous/invite",
+            "commands/miscellaneous/support",
+            "commands/miscellaneous/get-emojis"
+          ]},
+          { "group": "Premium", "pages": [
+            "commands/premium/premium",
+            "commands/premium/activate",
+            "commands/premium/deactivate",
+            "commands/premium/status",
+            "commands/premium/info"
+            ]}
+        ]
+      }
+    ],
+    "global": {}
+  },
+  "logo": { "light": "/favicon.png", "dark": "/favicon.png" },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+  "navbar": {
+    "links": [{ "label": "Support", "href": "https://autoreacter.com/support" }],
+    "primary": { "type": "button", "label": "Website", "href": "https://autoreacter.com" }
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity"]
+  },
+  "footer": {
+    "socials": { "discord": "https://autoreacter.com/support" }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/commands/getting-started"
+    }
+  ]
+}

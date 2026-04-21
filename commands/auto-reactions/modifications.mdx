@@ -1,0 +1,49 @@
+---
+title: "/autoreaction modifications"
+description: "Adjust settings for an auto-reaction."
+icon: sparkles
+iconType: solid
+---
+
+# /autoreaction modifications
+
+Adjust settings for an existing auto-reaction with advanced filtering options.
+
+## Permissions
+
+- **Requires:** Administrator or Manager
+
+## Usage
+
+`/autoreaction modifications`
+
+1. Select the auto-reactions you want to modify from the dropdown and confirm
+2. Choose the modification you want to apply to the selected auto-reactions
+3. Select the value for that modification
+
+## Available Modifications
+
+- **Ignore Replies** - Don't react to reply messages
+- **Ignore Bots** - Don't react to bot messages
+- **Ignore Webhooks** - Don't react to webhook messages
+- **Ignore Members** - Don't react to member messages
+- **Delete Unreacted Messages** - Delete messages that don't match the type filter or if the user has blocked the bot
+- **Delete If Blocked** - Delete messages if the user has blocked the bot
+- **Forum Target** - Control where the bot reacts in forum channels
+
+<Card
+  title="Modification Options"
+  icon="sparkles"
+  iconType="solid"
+  href="/commands/auto-reactions/modification-options"
+  horizontal
+>
+Learn more about each modification setting.
+</Card>
+
+## Pagination
+
+If you have more than 20 auto-reactions:
+- Results show 20 per page
+- Use the back and forward buttons to navigate pages
+- Switching pages resets your current selection

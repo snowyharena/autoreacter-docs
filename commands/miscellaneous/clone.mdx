@@ -1,0 +1,52 @@
+---
+title: "/clone"
+description: "Clone emojis to your server."
+icon: copy
+iconType: solid
+---
+
+# /clone
+
+Clone emojis from other servers to your own server.
+
+## Permissions
+
+- **Requires:** Administrator
+
+## Usage
+
+Fill in the parameter below and run `/clone`.
+
+## Parameters
+
+### 1. **Emoji** (Required)
+- The emoji(s) to clone
+- Separate multiple emojis with spaces
+- Supports Unicode emojis (ex: 😀, 🎉), custom emojis from other servers, and animated emojis
+
+## Requirements
+
+- **Bot Permissions:** The bot needs "Manage Expressions" permission
+- **User Permissions:** You must be an Adminastrator
+- **Server Slots:** Your server must have available emoji slots
+
+## Discord Emoji Limits
+
+Discord allows emoji slots based on server boost level:
+
+| Boost Level | Emoji Slots |
+|---|---|
+| No Boost | 50 emojis (25 static + 25 animated) |
+| Level 1 | 100 emojis (50 static + 50 animated) |
+| Level 2 | 150 emojis (75 static + 75 animated) |
+| Level 3 | 250 emojis (125 static + 125 animated) |
+
+## Rate Limiting
+
+Discord enforces a rate limit on emoji creation:
+- **Maximum:** 50 emojis per hour
+- **If limit is reached:** You'll need to wait for the limit to reset
+## Notes
+
+- Make sure your server has boost level appropriate for the number of emojis you want
+- The cloned emoji will have a similar name to the original

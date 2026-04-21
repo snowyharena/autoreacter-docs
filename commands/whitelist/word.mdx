@@ -1,0 +1,44 @@
+---
+title: "/whitelist word"
+description: "Add or remove a keyword from the whitelist."
+icon: arrow-down-a-z
+iconType: solid
+---
+
+# /whitelist word
+
+Add or remove a keyword from the whitelist of an auto-reaction. The bot will only react to messages containing whitelisted words.
+
+## Permissions
+
+- **Requires:** Administrator or Manager
+
+## Usage
+
+Fill in the parameter below and run `/whitelist word`.
+
+1. Select whether to add or remove the word
+2. Select the auto-reactions to apply it to and confirm
+
+## Parameters
+
+### 1. **Word** (Required)
+- The keyword to add or remove from the whitelist
+
+## Wildcard Rules
+
+Words support wildcards for flexible matching:
+
+| Pattern | Example | Matches |
+|---|---|---|
+| Exact match | `hello` | Message contains the word "hello" |
+| Contains | `*hello*` | Message contains "hello" anywhere |
+| Starts with | `hello*` | Word starts with "hello" |
+| Ends with | `*hello` | Word ends with "hello" |
+
+## Pagination
+
+If you have more than 20 auto-reactions:
+- Results show 20 per page
+- Use the back and forward buttons to navigate pages
+- Switching pages resets your current selection

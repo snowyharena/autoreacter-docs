@@ -1,0 +1,44 @@
+---
+title: "/blacklist word"
+description: "Add or remove a keyword from the blacklist."
+icon: arrow-down-a-z
+iconType: solid
+---
+
+# /blacklist word
+
+Add or remove a keyword from the blacklist of an auto-reaction. The bot will not react to messages containing blacklisted words.
+
+## Permissions
+
+- **Requires:** Administrator or Manager
+
+## Usage
+
+Fill in the parameter below and run `/blacklist word`.
+
+1. Select whether to add or remove the word
+2. Select the auto-reactions to apply it to and confirm
+
+## Parameters
+
+### 1. **Word** (Required)
+- The keyword to add or remove from the blacklist
+
+## Wildcard Rules
+
+Words support wildcards for flexible matching:
+
+| Pattern | Example | Matches |
+|---|---|---|
+| Exact match | `spam` | Message contains the word "spam" |
+| Contains | `*spam*` | Message contains "spam" anywhere |
+| Starts with | `spam*` | Word starts with "spam" |
+| Ends with | `*spam` | Word ends with "spam" |
+
+## Pagination
+
+If you have more than 20 auto-reactions:
+- Results show 20 per page
+- Use the back and forward buttons to navigate pages
+- Switching pages resets your current selection

@@ -1,0 +1,50 @@
+---
+title: "Modification Options"
+description: "All available modification settings for auto-reactions."
+icon: gear
+iconType: solid
+---
+
+# Modification Options
+
+When running `/autoreaction modifications`, you can choose from the following settings to apply to your auto-reactions.
+
+## Available Modifications
+
+### 1. **Ignore Replies**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will not react to messages that are replies to other messages.
+
+### 2. **Ignore Bots**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will not react to messages posted by other bots.
+
+### 3. **Ignore Webhooks**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will not react to messages posted by webhooks.
+
+### 4. **Ignore Members**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will not react to messages posted by members.
+
+### 5. **Delete Unreacted Messages**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will delete messages that don't match the type filter or if the user blocked the bot.
+
+### 6. **Delete If Blocked**
+- **Values:** True / False
+- **Default:** False
+- **Description:** When enabled, the bot will delete messages if the user has blocked the bot and the reaction cannot be added.
+
+### 7. **Forum Target**
+- **Values:** Replies Only / Posts Only / Both
+- **Default:** Replies Only
+- **Description:** Controls where the bot reacts in forum channels:
+  - **Replies Only:** Only react to messages inside forum threads
+  - **Posts Only:** Only react to the starting message of forum posts
+  - **Both:** React to both starting messages and replies
