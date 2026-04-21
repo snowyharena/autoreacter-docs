@@ -84,6 +84,9 @@
       "theme-color": "#FFDB5E"
     }
   },
+  "thumbnails": {
+    "background": "/images/autoreacter-gradient.png"
+  },
   "redirects": [
     {
       "source": "/",
