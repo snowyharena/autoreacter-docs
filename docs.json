@@ -79,6 +79,11 @@
   "footer": {
     "socials": { "discord": "https://autoreacter.com/support" }
   },
+  "seo": {
+    "metatags": {
+      "theme-color": "#41424A"
+    }
+  },
   "redirects": [
     {
       "source": "/",
