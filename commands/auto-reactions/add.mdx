@@ -24,6 +24,10 @@ Fill in the parameters below and run `/autoreaction add`.
 - Separate multiple emojis with spaces
 - Supports Unicode emojis (😀, 🎉, 🌟), custom server emojis, and animated custom emojis
 
+<Tip>
+Use Discord's emoji picker/emoji menu to insert emojis directly into the field for the best results. Using your keyboard's emoji menu or copying and pasting emojis from other sources may not be recognized correctly by the bot.
+</Tip>
+
 ### 2. **Type** (Required)
 - Which messages the bot should react to
 - **All Messages** - React to every message
@@ -50,6 +54,14 @@ Learn more about each message type filter.
 
 <Note>
 **Stacking Auto-Reactions:** If an auto-reaction already exists in a channel, using the `/autoreaction add` command again will add another auto-reaction on top of it with the next order number.
+</Note>
+
+<Note>
+If you use this command in a forum channel, after the emojis are validated you will be prompted with a menu to choose where the bot should react: replies only, posts only, or both.
+</Note>
+
+<Note>
+If you add an auto-reaction directly to a specific forum post, those post-level reactions take priority and the parent forum channel's reactions will no longer apply to that post.
 </Note>
 
 ## Examples
